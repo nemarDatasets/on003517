@@ -1,28 +1,92 @@
 {
   "version": "2.0",
-  "dataset_id": "on003517",
-  "source": "openneuro",
-  "source_id": "ds003517",
+  "pipeline_stage": "validated",
   "title": "EEG: Continuous gameplay of an 8-bit style video game",
-  "authors": {
-    "James F Cavanagh": {},
-    "Joel Castellanos": {}
-  },
   "license": "CC0",
   "dataset_type": "raw",
+  "authors": {
+    "James F Cavanagh": {
+      "orcid": "0000-0003-2428-3562"
+    },
+    "Joel Castellanos": {}
+  },
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003517.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003517",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003517",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2016.02.075",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.1.1",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".c",
+    ".csv",
+    ".dll",
+    ".dylib",
+    ".exe",
+    ".fdt",
+    ".gif",
+    ".gitattributes",
+    ".jar",
+    ".java",
+    ".jnilib",
+    ".json",
+    ".lib",
+    ".m",
+    ".md",
+    ".png",
+    ".set",
+    ".so",
+    ".tsv",
+    ".ttf",
+    ".txt",
+    ".xlsx"
+  ],
+  "description": "This dataset comprises electroencephalography (EEG) recordings from 17 participants during continuous gameplay of an 8-bit style video game, supplemented by recordings from a visual oddball task and a gambling task. EEG signals were synchronized with behavioral data including player position, movement, actions, and antagonist information logged continuously during gameplay. The dataset provides a rich resource for investigating neural correlates of real-time decision-making and motor control in dynamic gaming environments.",
+  "methods_description": "EEG data were collected circa 2015 using synchronized task triggers and continuous behavioral logging. Participants completed three tasks: a 2-stimulus visual oddball task, a 2-doors gambling task, and continuous gameplay of the Escape from Asteroid Axon video game. Tasks were implemented in Java and sent event triggers to the EEG recording system while simultaneously outputting continuous behavioral data in CSV format.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "video game"
+    },
+    {
+      "term": "motor control"
+    },
+    {
+      "term": "decision-making"
+    },
+    {
+      "term": "oddball task"
+    },
+    {
+      "term": "gambling task"
+    },
+    {
+      "term": "real-time behavior"
+    }
+  ],
+  "source_hash": "f826c32ad7c0b9c5ef4dfb7cd8df5575a4609e03b922bf9b8516f2c4c11ebf8a"
 }
