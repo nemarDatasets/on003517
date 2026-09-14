@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG: Continuous gameplay of an 8-bit style video game",
-  "description": "This dataset comprises electroencephalography (EEG) recordings from 17 participants during continuous gameplay of an 8-bit style video game, supplemented by recordings from a visual oddball task and a gambling task. EEG signals were synchronized with behavioral data including player position, movement, actions, and antagonist information logged continuously during gameplay. The dataset provides a rich resource for investigating neural correlates of real-time decision-making and motor control in dynamic gaming environments.",
-  "methods_description": "EEG data were collected circa 2015 using synchronized task triggers and continuous behavioral logging. Participants completed three tasks: a 2-stimulus visual oddball task, a 2-doors gambling task, and continuous gameplay of the Escape from Asteroid Axon video game. Tasks were implemented in Java and sent event triggers to the EEG recording system while simultaneously outputting continuous behavioral data in CSV format containing movement, player position, actions, and antagonist information.",
+  "description": "This dataset contains EEG recordings from 17 participants collected during continuous gameplay of an 8-bit style video game (Escape from Asteroid Axon), along with two additional tasks: a 2-stimulus visual oddball task and a 2-doors gambling task. The tasks were implemented in Java and generated both EEG event triggers and continuous behavioral log data (movement, player position, actions, antagonist position, loot box events, etc.). Data were collected circa 2015 in the Cognitive Rhythms and Computation Lab at the University of New Mexico.",
+  "methods_description": "EEG was recorded during three tasks implemented in Java: a video game (Escape from Asteroid Axon), a 2-stimulus visual oddball task, and a 2-doors gambling task. Each task sent triggers to the EEG recording system and also output continuous behavioral data to a .csv log file capturing movement, player position, actions, and game state information.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,40 +20,34 @@
       "term": "video game"
     },
     {
-      "term": "motor control"
-    },
-    {
-      "term": "decision-making"
-    },
-    {
       "term": "oddball task"
     },
     {
       "term": "gambling task"
     },
     {
-      "term": "real-time behavior"
+      "term": "cognitive neuroscience"
     }
   ],
   "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds003517.v1.1.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
     {
       "identifier": "https://github.com/nemarDatasets/on003517",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003517",
-      "identifier_type": "URL",
+      "identifier": "10.1016/j.neuroimage.2016.02.075",
+      "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "10.1016/j.neuroimage.2016.02.075",
+      "identifier": "10.18112/openneuro.ds003517.v1.1.0",
       "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003517",
+      "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     }
   ],
@@ -62,7 +56,7 @@
     "eeg"
   ],
   "sizes": [
-    "7.0 GB (224 files)"
+    "6.47 GB (224 files)"
   ],
   "formats": [
     ".c",
@@ -89,5 +83,5 @@
     ".xlsx",
     ".yml"
   ],
-  "source_hash": "f826c32ad7c0b9c5ef4dfb7cd8df5575a4609e03b922bf9b8516f2c4c11ebf8a"
+  "source_hash": "f73f3bd00bfce3877d47c3f0110efe4d925d35749c528a5db7afc9d1ddc95114"
 }
